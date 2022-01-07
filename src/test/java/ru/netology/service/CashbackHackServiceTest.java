@@ -34,10 +34,6 @@ public class CashbackHackServiceTest {
 
     @Test
     public void shouldReturn0Rub() {
-        try {
             assertEquals(service.remain(1000), 0);
-        } catch (java.lang.AssertionError e) {
-            System.out.println("shouldReturn0Rub: at 1000 rubles it asks to buy another 1000 rubles");
-        }
     }
 }
