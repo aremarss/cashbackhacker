@@ -67,10 +67,6 @@ public class CashbackHackServiceTest {
 
     @org.junit.jupiter.api.Test
     public void shouldReturn0RubJupiter() {
-        try {
             assertEquals(service.remain(1000), 0);
-        } catch (java.lang.AssertionError e) {
-            System.out.println("shouldReturn0RubJupiter: at 1000 rubles it asks to buy another 1000 rubles");
-        }
     }
 }
